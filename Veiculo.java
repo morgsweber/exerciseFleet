@@ -6,4 +6,12 @@ public class Veiculo{
     private int ano;
     private double valor;
 
+    public Veiculo(){
+        this.placa = placa;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.valor = valor;
+    }
+
 }
