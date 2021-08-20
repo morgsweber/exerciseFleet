@@ -14,12 +14,14 @@ public class Veiculo{
         this.valor = valor;
     }
 
+    //metodos getters
     public String getPlaca(){ return placa;}
     public String getMarca(){ return marca;}
     public String getModelo(){ return modelo;}
     public int getAno(){ return ano;}
     public double getValor(){ return valor;}
 
+    //metodos setters
     public void setPlaca(String nova_placa){
         this.placa = nova_placa;
     }
@@ -34,6 +36,14 @@ public class Veiculo{
     }
     public void setValor(double novo_valor){
         this.valor = novo_valor;
+    }
+
+    public String toString(){
+        return "\nPlaca: " + getPlaca() + "\n" +
+        "Marca: " + getMarca() + "\n" +
+        "Modelo: " + getModelo() + "\n" +
+        "Ano: " + getAno() + "\n" + 
+        "Valor: " + getValor() + "\n" ;
     }
 
 }
