@@ -18,7 +18,7 @@ public class Veiculo{
     public String getMarca(){ return marca;}
     public String getModelo(){ return modelo;}
     public int getAno(){ return ano;}
-    public double getValor(){ return valor;
+    public double getValor(){ return valor;}
 
     public void setPlaca(String nova_placa){
         this.placa = nova_placa;
