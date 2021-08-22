@@ -1,10 +1,15 @@
 public class VeiculoUtilitario extends Veiculo{
 
-    protected int capCargaTon;
+    private int capCargaTon;
+	private int nroEixos;
 
-    protected VeiculoUtilitario(String placa, String marca, String modelo, int ano, double valor, int capCargaTon) {
-        super(placa, marca, modelo, ano, valor);
+    public VeiculoUtilitario(String placa, String marca, String modelo, 
+	int ano, double valor, int capCargaTon, int nroEixos) {
+        
+		super(placa, marca, modelo, ano, valor);
         this.capCargaTon =capCargaTon;
+		this.nroEixos = nroEixos;
+		
     }
 
     public int getCapCargaTon() {
@@ -14,10 +19,19 @@ public class VeiculoUtilitario extends Veiculo{
     public void setCapCargaTon(int capCargaTon) {
         this.capCargaTon = capCargaTon;
     }
+	
+	public int nroEixos() {
+        return nroEixos;
+    }
+
+    public void setNroEixos(int nroEixos) {
+        this.nroEixos = nroEixos;
+    }
 
     @Override
     public String toString(){
         return super.toString() +
-                "Carga: " + getCapCargaTon() + "\n";
+                "Carga: " + getCapCargaTon() + "\n" +
+				"Numero de Eixos: " + nroEixos + "\n";
     }
 }
