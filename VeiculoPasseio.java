@@ -18,6 +18,6 @@ public class VeiculoPasseio extends Veiculo{
     @Override
     public String toString(){
         return super.toString() +
-                "Consumo: " + getConsumoKmLt() "\n";
+                "Consumo: " + getConsumoKmLt() + "\n";
     }
 }

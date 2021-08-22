@@ -18,6 +18,6 @@ public class VeiculoPassageiros extends Veiculo{
     @Override
     public String toString(){
         return super.toString() +
-                "Numero de Passageiros: " + nroPass() "\n";
+                "Numero de Passageiros: " + getnroPass() + "\n";
     }
 }
