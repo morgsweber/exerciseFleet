@@ -1,8 +1,8 @@
 public class App{
 
     public static void main(String [] args){
-
-        System.out.println("hello world");
+        VeiculoPasseio batata = new VeiculoPasseio("jok9092", "fiat", "uno", 2008, 8000, 20);
+        System.out.println(batata.toString());
     }
 
 }

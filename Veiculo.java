@@ -1,12 +1,12 @@
-public class Veiculo{
+public abstract class Veiculo{
 
-    private String placa;
-    private String marca;
-    private String modelo;
-    private int ano;
-    private double valor;
+    protected String placa;
+    protected String marca;
+    protected String modelo;
+    protected int ano;
+    protected double valor;
 
-    public Veiculo(){
+    protected Veiculo(String placa, String marca, String modelo, int ano, double valor){
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
