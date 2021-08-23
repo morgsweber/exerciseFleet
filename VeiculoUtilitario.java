@@ -20,7 +20,7 @@ public class VeiculoUtilitario extends Veiculo{
         this.capCargaTon = capCargaTon;
     }
 	
-	public int nroEixos() {
+	public int getNroEixos() {
         return nroEixos;
     }
 
@@ -32,6 +32,6 @@ public class VeiculoUtilitario extends Veiculo{
     public String toString(){
         return super.toString() +
                 "Carga: " + getCapCargaTon() + "\n" +
-				"Numero de Eixos: " + nroEixos + "\n";
+				"Numero de Eixos: " + getNroEixos() + "\n";
     }
 }

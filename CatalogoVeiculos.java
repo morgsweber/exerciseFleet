@@ -3,11 +3,9 @@ import java.util.ArrayList;
 public class CatalogoVeiculos {
 
     private ArrayList<Veiculo> veiculos;
-    private ArrayList<Veiculo> resultado;
 
     public CatalogoVeiculos(){
         veiculos = new ArrayList<>(100);
-        resultado = new ArrayList<>(100);
     }
 
     public Veiculo consultaPorPlaca(String placa){
@@ -20,7 +18,7 @@ public class CatalogoVeiculos {
     }
 
     public ArrayList<Veiculo> consultaPorMarca(String marca){
-
+        ArrayList<Veiculo> resultado = new ArrayList<>(100);
         for(Veiculo veiculo:veiculos){
             if (veiculo.getMarca().equals(marca)){
                 resultado.add(veiculo);
@@ -31,6 +29,7 @@ public class CatalogoVeiculos {
 
     public ArrayList<Veiculo> consultaPorAno(int ano){
 
+        ArrayList<Veiculo> resultado = new ArrayList<>(100);
         for(Veiculo veiculo:veiculos){
             if (veiculo.getAno() == ano){
                 resultado.add(veiculo);
@@ -40,12 +39,11 @@ public class CatalogoVeiculos {
     }
 
     public ArrayList<Veiculo> consultaPorTipo(String tipo){
-        if(tipo.equals("utilitario")){
-
-        }else if(tipo.equals("passeio")){
-
-        }else if(tipo.equals("passageiros")){
-
+        ArrayList<Veiculo> resultado = new ArrayList<>(100);
+        for(Veiculo veiculo:veiculos){
+            if (veiculo.getClass().getName().substring(7).equalsIgnoreCase(tipo)){
+                resultado.add(veiculo);
+            }
         }
         return resultado;
     }

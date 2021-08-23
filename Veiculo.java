@@ -14,6 +14,8 @@ public abstract class Veiculo{
         this.valor = valor;
     }
 
+
+
     //metodos getters
     public String getPlaca(){ return placa;}
     public String getMarca(){ return marca;}
