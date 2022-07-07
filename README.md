@@ -2,7 +2,7 @@
 
 ##### About the project
 
-This repository was created to exercise some teame colaboration in a small project. 
+This repository was created to exercise team collaboration in a small project. 
 
 ##### Requirements
 * [Java](https://www.oracle.com/java/technologies/downloads/)
